@@ -1,8 +1,10 @@
 import React from 'react';
 import './MaterialIcon.css';
 
-const MaterialIcon = (props) => (
-  <i className={"material-icons" + (props.hasPointer ? " cursor-pointer" : "")} onClick={() => props.click()}>{props.name}</i>
-);
+const MaterialIcon = (props) => {
+  return (
+    <i className={"material-icons navigation-icon" + (props.hasPointer ? " cursor-pointer" : "")} data-currentscreen={props.currentScreen}>{props.name}</i>
+  );
+}
 
 export default MaterialIcon;

@@ -1,0 +1,26 @@
+.slides {
+  flex-grow: 1;
+  position: relative;
+}
+
+.slides-wrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  transition: left .25s ease-in-out .125s;
+}
+
+.slides-wrapper[data-currentscreen="1"]{
+  left: 0;
+}
+
+.slides-wrapper[data-currentscreen="2"]{
+  left: -100%;
+}
+
+.slides-wrapper[data-currentscreen="3"]{
+  left: -200%;
+}

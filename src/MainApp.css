@@ -6,17 +6,29 @@
   width: 500px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  background: #121212;
 }
 
-.content {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
+.background {
+  position: absolute;
+  width: 100%;
+  height: 600%;
+  background: linear-gradient(to bottom, rgba(10,27,53,1) 0%,rgba(214,40,92,1) 11%,rgba(214,40,92,1) 11%,rgba(224,153,11,1) 28%,rgba(206,226,234,1) 38%,rgba(118,205,242,1) 53%,rgba(255,181,91,1) 66%,rgba(128,74,137,1) 76%,rgba(128,74,137,1) 76%,rgba(21,25,43,1) 100%);
+  transition: top 3s ease .125s;
+  opacity: .9;
+  pointer-events: none;
 }
 
-.footer {
-  display: flex;
-  flex-grow: 0;
-  justify-content: space-between;
+.background[data-currentscreen="1"]{
+  top: 0;
+}
+
+.background[data-currentscreen="2"]{
+  top: -300%;
+}
+
+.background[data-currentscreen="3"]{
+  top: -500%;
 }

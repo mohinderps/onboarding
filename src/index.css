@@ -25,4 +25,23 @@ body {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.screen {
+  width: 33.33%;
+}
+
+.center {
+  text-align: center;
+}
+
+.onboarding-icon {
+  font-size: 100px;
+  color: white
+}
+
+.onboarding-message {
+  font-size: 30px;
+  color: white;
 }

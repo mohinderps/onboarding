@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import MaterialIcon from './MaterialIcon';
 import Screen1 from './Screen1';
 import Screen2 from './Screen2';
 import Screen3 from './Screen3';
+import Slides from './Slides';
+import Footer from './Footer';
 import './MainApp.css';
 
 class MainApp extends Component {
@@ -27,34 +28,12 @@ class MainApp extends Component {
     })
   }
 
-  setScreen(n) {
-    debugger
-    this.setState({
-      screen: n
-    })
-  }
-
   render() {
     return (
       <div className="container">
-        <div className="content">
-          {this.state.screen === 1 ? <Screen1 /> : ""}
-          {this.state.screen === 2 ? <Screen2 /> : ""}
-          {this.state.screen === 3 ? <Screen3 /> : ""}
-        </div>
-        <div className="footer">
-          <span>
-            {this.state.screen !== 1 ? <MaterialIcon name="navigate_before" hasPointer click={this.previousScreen}/> : ""}
-          </span>
-          <span>
-            <MaterialIcon name="radio_button_unchecked" hasPointer click={() => this.setScreen(1)}/>
-            <MaterialIcon name="radio_button_unchecked" hasPointer click={() => this.setScreen(2)}/>
-            <MaterialIcon name="radio_button_unchecked" hasPointer click={() => this.setScreen(3)}/>
-          </span>
-          <span>
-            {this.state.screen !== 3? <MaterialIcon name="navigate_next" hasPointer click={this.nextScreen}/>: ""}
-          </span>
-        </div>
+        <div className="background" data-currentscreen={this.state.screen}></div>
+        <Slides currentScreen={this.state.screen}/>
+        <Footer nextScreen={this.nextScreen} previousScreen={this.previousScreen} currentScreen={this.state.screen}/>
       </div>
     )
   }
