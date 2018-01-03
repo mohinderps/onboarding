@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Slides from './Slides';
-import Footer from './Footer';
+import Slides from '../Slides/Slides';
+import Footer from '../Footer/Footer';
 import './MainApp.css';
 
 class MainApp extends Component {
