@@ -19,6 +19,7 @@
   transition: top 3s ease .125s;
   opacity: .9;
   pointer-events: none;
+  z-index: 1;
 }
 
 .background[data-currentscreen="1"]{
