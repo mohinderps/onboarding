@@ -1,7 +1,15 @@
+## About
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a onboarding component written in react. The component can be used to onboard new users to the app. The design is inspired from [Jack Oliver's onboarding component](https://codepen.io/jackoliver/full/XNvRrQ/).
 
-## Example
+## Screenshots
+<img src="Screenshot1.png" width="200" height="300"><img src="Screenshot2.png" width="200" height="300">
+<img src="Screenshot3.png" width="200" height="300">
 
-<img alt="1st Step" src="https://github.com/mohinderps/onboarding/raw/master/Screenshot1.png">
-<img alt="2st Step" src="https://github.com/mohinderps/onboarding/raw/master/Screenshot2.png">
-<img alt="3st Step" src="https://github.com/mohinderps/onboarding/raw/master/Screenshot3.png">
+## How to use
+``` bash
+$ git clone https://github.com/mohinderps/onboarding.git
+$ npm install
+$ npm start
+```
+#### Do star mark the repo in case you like it. Thank you.
