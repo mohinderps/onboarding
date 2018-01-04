@@ -3,19 +3,47 @@
   flex-grow: 0;
   justify-content: space-between;
   padding: 0 20px;
-  z-index: 2;
+  position: relative;
 }
 
 .next-icon[data-currentscreen="3"] {
   pointer-events: none;
   opacity: .5;
+  transition: opacity .125s ease-in-out;
 }
 
 .previous-icon[data-currentscreen="1"] {
   pointer-events: none;
   opacity: .5;
+  transition: opacity .125s ease-in-out;
 }
 
 .cursor-default {
   cursor: default;
+}
+
+.dots{
+  display: flex;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: white;
+  opacity: .5;
+  margin: 5px;
+  transition: opacity .125s ease-in-out;
+}
+
+.dots[data-currentscreen="1"] .dot:nth-child(1){
+  opacity: 1;
+}
+
+.dots[data-currentscreen="2"] .dot:nth-child(2){
+  opacity: 1;
+}
+
+.dots[data-currentscreen="3"] .dot:nth-child(3){
+  opacity: 1;
 }

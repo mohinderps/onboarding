@@ -1,7 +1,7 @@
 .slides {
   flex-grow: 1;
   position: relative;
-  z-index: 2;
+  overflow: hidden;
 }
 
 .slides-wrapper {
